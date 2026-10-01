@@ -16,6 +16,21 @@ public static void main() {
     System.out.println("digite a quita nota: ");
     double nota5 = entrada.nextDouble();
 
-    double media = (nota1 + nota2 + nota3 + nota4 + nota5 / 5);
+    double media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
     System.out.println("media" +media);
+
+    if(media >= 7){
+        System.out.println("Aprovado");
+    }else if(media >= 4){
+        System.out.println("Recuperação");
+    }else{
+        System.out.println("Reprovado");
+    }
+
+    System.out.println("Nota 1: "+nota1);
+    System.out.println("Nota 2: "+nota2);
+    System.out.println("Nota 3: "+nota3);
+    System.out.println("Nota 4: "+nota4);
+    System.out.println("Nota 5: "+nota5);
 }
+
